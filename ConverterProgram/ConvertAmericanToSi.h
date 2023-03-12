@@ -2,6 +2,6 @@
 class ConvertAmericanToSi
 {
 public:
-	static double inchToMetre(double input, bool directly); //duimi v metri
+	static double inchToMetre(double input, bool directly); //дюймы в метры
 };
 

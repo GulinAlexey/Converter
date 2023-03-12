@@ -45,7 +45,7 @@ namespace ConverterUnitTest
 		}
 		TEST_METHOD(Arshin1ToMetreTest)
 		{
-			double res = ConvertRussianToSi::arshinToMetre(1, false);
+			double res = ConvertRussianToSi::arshinToMetre(1, true);
 
 			Assert::AreEqual(0.7112, res);
 		}
@@ -68,13 +68,13 @@ namespace ConverterUnitTest
 		}
 		TEST_METHOD(Inch1ToArshinTest)
 		{
-			double res = ConvertAmericanToRussian::inchToArshin(1, false);
+			double res = ConvertAmericanToRussian::inchToArshin(1, true);
 
 			Assert::AreEqual(0.036, res);
 		}
 		TEST_METHOD(Arshin1ToInchTest)
 		{
-			double res = ConvertAmericanToRussian::arshinToInch(1, false);
+			double res = ConvertAmericanToRussian::inchToArshin(1, false);
 
 			Assert::AreEqual(28.0, res);
 		}
