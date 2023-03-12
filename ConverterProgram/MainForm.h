@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "ConvertAmericanToSi.h"
 #include "ConvertRussianToSi.h"
 #include "ConvertAmericanToRussian.h"
@@ -13,7 +13,7 @@ namespace converterProgram {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MainForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MainForm
 	/// </summary>
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
@@ -22,13 +22,13 @@ namespace converterProgram {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MainForm()
 		{
@@ -42,14 +42,14 @@ namespace converterProgram {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -64,7 +64,7 @@ namespace converterProgram {
 			this->Name = L"MainForm";
 			this->ShowIcon = false;
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"Конвертер различных величин";
+			this->Text = L"РљРѕРЅРІРµСЂС‚РµСЂ СЂР°Р·Р»РёС‡РЅС‹С… РІРµР»РёС‡РёРЅ";
 			this->ResumeLayout(false);
 
 		}

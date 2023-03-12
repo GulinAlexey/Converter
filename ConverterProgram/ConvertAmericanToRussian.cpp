@@ -1,1 +1,1 @@
-#include "ConvertAmericanToRussian.h"
+﻿#include "ConvertAmericanToRussian.h"

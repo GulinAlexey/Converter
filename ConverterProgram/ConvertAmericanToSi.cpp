@@ -1,15 +1,15 @@
-#include "ConvertAmericanToSi.h"
+﻿#include "ConvertAmericanToSi.h"
 
-double ConvertAmericanToSi::inchToMetre(double input, bool directly) //duimi v metri
+double ConvertAmericanToSi::inchToMetre(double input, bool directly) //дюймы в метры
 {
 	if (directly)
 	{
-		//todo dorabotat' vichislenie inchToMetre
+		//todo доработать вычисление inchToMetre
 		return 0.025;
 	}
 	else
 	{
-		//todo dorabotat' vichislenie inchToMetre
+		//todo доработать вычисление inchToMetre
 		return 39.37;
 	}
 }

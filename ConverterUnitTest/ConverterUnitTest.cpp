@@ -43,6 +43,18 @@ namespace ConverterUnitTest
 			ConvertRussianToSi* conv = new ConvertRussianToSi();
 			Assert::IsNotNull(conv);
 		}
+		TEST_METHOD(Arshin1ToMetreTest)
+		{
+			double res = ConvertRussianToSi::arshinToMetre(1, false);
+
+			Assert::AreEqual(0.7112, res);
+		}
+		TEST_METHOD(Metre1ToArshinTest)
+		{
+			double res = ConvertRussianToSi::arshinToMetre(1, false);
+
+			Assert::AreEqual(0.406, res);
+		}
 	};
 
 	TEST_CLASS(ConvertAmericanToRussianTest)
@@ -53,6 +65,18 @@ namespace ConverterUnitTest
 		{
 			ConvertAmericanToRussian* conv = new ConvertAmericanToRussian();
 			Assert::IsNotNull(conv);
+		}
+		TEST_METHOD(Inch1ToArshinTest)
+		{
+			double res = ConvertAmericanToRussian::inchToArshin(1, false);
+
+			Assert::AreEqual(0.036, res);
+		}
+		TEST_METHOD(Arshin1ToInchTest)
+		{
+			double res = ConvertAmericanToRussian::arshinToInch(1, false);
+
+			Assert::AreEqual(28.0, res);
 		}
 	};
 }
