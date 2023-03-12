@@ -1,4 +1,7 @@
 #pragma once
+#include "ConvertAmericanToSi.h"
+#include "ConvertRussianToSi.h"
+#include "ConvertAmericanToRussian.h"
 
 namespace converterProgram {
 

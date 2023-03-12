@@ -121,9 +121,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConvertAmericanToRussian.cpp" />
+    <ClCompile Include="ConvertAmericanToSi.cpp" />
+    <ClCompile Include="ConvertRussianToSi.cpp" />
     <ClCompile Include="MainForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConvertAmericanToRussian.h" />
+    <ClInclude Include="ConvertAmericanToSi.h" />
+    <ClInclude Include="ConvertRussianToSi.h" />
     <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

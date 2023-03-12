@@ -1,17 +1,20 @@
 ﻿#include "pch.h"
 #include "CppUnitTest.h"
+#include "../ConverterProgram/ConvertAmericanToSi.h"
+#include "../ConverterProgram/ConvertRussianToSi.h"
+#include "../ConverterProgram/ConvertAmericanToRussian.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace ConverterUnitTest
 {
-	TEST_CLASS(ConvertertAmericanToSiTest)
+	TEST_CLASS(ConvertAmericanToSiTest)
 	{
 	public:
 
-		TEST_METHOD(CreateConvertertAmericanToSiTest)
+		TEST_METHOD(CreateConvertAmericanToSiTest)
 		{
-			ConvertertAmericanToSi* conv = new ConvertertAmericanToSi();
+			ConvertAmericanToSi* conv = new ConvertAmericanToSi();
 			Assert::IsNotNull(conv);
 		}
 	};
@@ -22,7 +25,7 @@ namespace ConverterUnitTest
 
 		TEST_METHOD(CreateConvertRussianToSiTest)
 		{
-			ConvertertRussianToSi* conv = new ConvertertRussianToSi();
+			ConvertRussianToSi* conv = new ConvertRussianToSi();
 			Assert::IsNotNull(conv);
 		}
 	};
