@@ -1,8 +1,11 @@
 ﻿#include "pch.h"
 #include "CppUnitTest.h"
 #include "../ConverterProgram/ConvertAmericanToSi.h"
+#include "../ConverterProgram/ConvertAmericanToSi.cpp"
 #include "../ConverterProgram/ConvertRussianToSi.h"
+#include "../ConverterProgram/ConvertRussianToSi.cpp"
 #include "../ConverterProgram/ConvertAmericanToRussian.h"
+#include "../ConverterProgram/ConvertAmericanToRussian.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

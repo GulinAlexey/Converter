@@ -1,2 +1,0 @@
-C:\Users\Алексей\source\repos\Converter\ConverterUnitTest\Debug\ConverterUnitTest.vcxproj.AssemblyReference.cache
-C:\Users\Алексей\source\repos\Converter\ConverterUnitTest\Debug\ConverterUnitTest.vcxproj.CopyComplete
