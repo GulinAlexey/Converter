@@ -1,0 +1,4 @@
+C:\Users\Алексей\source\repos\Converter\ConverterProgram\Debug\ConverterProgram.vcxproj.AssemblyReference.cache
+C:\Users\Алексей\source\repos\Converter\ConverterProgram\Debug\ConverterProgram.MainForm.resources
+C:\Users\Алексей\source\repos\Converter\ConverterProgram\Debug\ConverterProgram.vcxproj.GenerateResource.cache
+C:\Users\Алексей\source\repos\Converter\ConverterProgram\Debug\ConverterProgram.exe
