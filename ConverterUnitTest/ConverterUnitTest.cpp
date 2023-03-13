@@ -132,6 +132,64 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(0.130, res);
 		}
+		TEST_METHOD(Acre1ToSquareMetre)
+		{
+			double res = ConvertAmericanToSi::acreToSquareMetre(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(4046.873, res);
+		}
+		TEST_METHOD(SquareMetre1ToAcre)
+		{
+			double res = ConvertAmericanToSi::acreToSquareMetre(1, false);
+			res = round(res * 100000) / 100000; //округление до пятого знака после запятой
+
+			Assert::AreEqual(0.00025, res);
+		}
+		TEST_METHOD(Pound1ToKg)
+		{
+			double res = ConvertAmericanToSi::poundToKg(1, true);
+
+			res = round(res * 100) / 100; //округление до второго знака после запятой
+
+			Assert::AreEqual(0.45, res);
+		}
+		TEST_METHOD(Kg1ToPound)
+		{
+			double res = ConvertAmericanToSi::poundToKg(1, false);
+
+			res = round(res * 100) / 100; //округление до второго знака после запятой
+
+			Assert::AreEqual(2.21, res);
+		}
+		TEST_METHOD(Hundredweight1ToKg)
+		{
+			double res = ConvertAmericanToSi::hundredweightToKg(1, true);
+			res = round(res); //округление
+
+			Assert::AreEqual(100, res);
+		}
+		TEST_METHOD(Kg1ToHundredweight)
+		{
+			double res = ConvertAmericanToSi::hundredweightToKg(1, false);
+			res = round(res * 100) / 100; //округление до второго знака после запятой
+
+			Assert::AreEqual(0.01, res);
+		}
+		TEST_METHOD(Fahrenheit1ToKelvin)
+		{
+			double res = ConvertAmericanToSi::fahrenheitToKelvin(1, true);
+			res = round(res * 100) / 100; //округление до второго знака после запятой
+
+			Assert::AreEqual(255.93, res);
+		}
+		TEST_METHOD(Kelvin1ToFahrenheit)
+		{
+			double res = ConvertAmericanToSi::fahrenheitToKelvin(1, false);
+			res = round(res * 100) / 100; //округление до второго знака после запятой
+
+			Assert::AreEqual(-457.87, res);
+		}
 	};
 
 	TEST_CLASS(ConvertRussianToSiTest)
