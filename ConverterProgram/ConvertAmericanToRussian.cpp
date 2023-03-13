@@ -74,3 +74,75 @@ double ConvertAmericanToRussian::inchToLadon(double input, bool directly) //дю
 	}
 }
 
+double ConvertAmericanToRussian::footToArshin(double input, bool directly) //футы (США) в аршины (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::arshinToMetre(ConvertAmericanToSi::footToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::footToMetre(ConvertRussianToSi::arshinToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::footToLokot(double input, bool directly) //футы (США) в локти (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::lokotToMetre(ConvertAmericanToSi::footToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::footToMetre(ConvertRussianToSi::lokotToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::footToSazhen(double input, bool directly) //футы (США) в сажени (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::sazhenToMetre(ConvertAmericanToSi::footToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::footToMetre(ConvertRussianToSi::sazhenToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::footToVersta(double input, bool directly) //футы (США) в вёрсты (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::verstaToMetre(ConvertAmericanToSi::footToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::footToMetre(ConvertRussianToSi::verstaToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::footToPyad(double input, bool directly) //футы (США) в пяди (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::pyadToMetre(ConvertAmericanToSi::footToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::footToMetre(ConvertRussianToSi::pyadToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::footToLadon(double input, bool directly) //футы (США) в ладони (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::ladonToMetre(ConvertAmericanToSi::footToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::footToMetre(ConvertRussianToSi::ladonToMetre(input, true), false);
+	}
+}
+

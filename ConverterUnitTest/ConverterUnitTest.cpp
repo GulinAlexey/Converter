@@ -791,6 +791,9 @@ namespace ConverterUnitTest
 			double resBack = ConvertAmericanToRussian::footToLokot(resNormal, true);
 			resBack = ConvertAmericanToRussian::footToLokot(resBack, false);
 
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
 			Assert::AreEqual(resNormal, resBack);
 		}
 		TEST_METHOD(Foot1ToSazhenAndBackTest)

@@ -8,6 +8,12 @@ public:
 	static double inchToVersta(double input, bool directly); //дюймы (США) в вёрсты (обратно при directly = false)
 	static double inchToPyad(double input, bool directly); //дюймы (США) в пяди (обратно при directly = false)
 	static double inchToLadon(double input, bool directly); //дюймы (США) в ладони (обратно при directly = false)
+	static double footToArshin(double input, bool directly); //футы (США) в аршины (обратно при directly = false)
+	static double footToLokot(double input, bool directly); //футы (США) в локти (обратно при directly = false)
+	static double footToSazhen(double input, bool directly); //футы (США) в сажени (обратно при directly = false)
+	static double footToVersta(double input, bool directly); //футы (США) в вёрсты (обратно при directly = false)
+	static double footToPyad(double input, bool directly); //футы (США) в пяди (обратно при directly = false)
+	static double footToLadon(double input, bool directly); //футы (США) в ладони (обратно при directly = false)
 
 }; 
 
