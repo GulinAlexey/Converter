@@ -116,3 +116,29 @@ double ConvertRussianToSi::poodToKg(double input, bool directly) //пуды (р�
 		return input / coeff;
 	}
 }
+
+double ConvertRussianToSi::bochkaToCubicMetre(double input, bool directly) //бочки в куб. метры (обратно при directly = false)
+{
+	double coeff = 0.4919764;
+	if (directly)
+	{
+		return input * coeff;
+	}
+	else
+	{
+		return input / coeff;
+	}
+}
+
+double ConvertRussianToSi::charkaToCubicMetre(double input, bool directly) //чарки в куб. метры (обратно при directly = false)
+{
+	double coeff = 0.0001229941;
+	if (directly)
+	{
+		return input * coeff;
+	}
+	else
+	{
+		return input / coeff;
+	}
+}

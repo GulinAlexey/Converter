@@ -579,7 +579,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::bochkaToCubicMetre(5.78, true);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(2.843, res);
+			Assert::AreEqual(2.844, res);
 		}
 		TEST_METHOD(CubicMetre1ToBochkaTest)
 		{
@@ -593,7 +593,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::bochkaToCubicMetre(3.66, false);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(7.441, res);
+			Assert::AreEqual(7.439, res);
 		}
 		TEST_METHOD(Charka1ToCubicMetreTest)
 		{

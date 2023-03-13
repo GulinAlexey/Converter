@@ -93,7 +93,6 @@ double ConvertAmericanToSi::hundredweightToKg(double input, bool directly) //ц�
 
 double ConvertAmericanToSi::fahrenheitToKelvin(double input, bool directly) //фаренгейты в кельвины (обратно при directly = false)
 {
-	double coeff = 45.359237;
 	if (directly)
 	{
 		return (input + 459.67) * 5 / 9;
@@ -101,5 +100,31 @@ double ConvertAmericanToSi::fahrenheitToKelvin(double input, bool directly) //ф
 	else
 	{
 		return 1.8 * (input - 273) + 32;
+	}
+}
+
+double ConvertAmericanToSi::gallonToCubicMetre(double input, bool directly) //галлоны в куб. метры (обратно при directly = false)
+{
+	double coeff = 0.003785411784;
+	if (directly)
+	{
+		return input * coeff;
+	}
+	else
+	{
+		return input / coeff;
+	}
+}
+
+double ConvertAmericanToSi::barrelToCubicMetre(double input, bool directly) //баррели в куб. метры (обратно при directly = false)
+{
+	double coeff = 0.119240471196;
+	if (directly)
+	{
+		return input * coeff;
+	}
+	else
+	{
+		return input / coeff;
 	}
 }

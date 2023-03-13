@@ -10,5 +10,7 @@ public:
 	static double poundToKg(double input, bool directly); //фунты в кг (обратно при directly = false)
 	static double hundredweightToKg(double input, bool directly); //центнеры США в кг (обратно при directly = false)
 	static double fahrenheitToKelvin(double input, bool directly); //фаренгейты в кельвины (обратно при directly = false)
+	static double gallonToCubicMetre(double input, bool directly); //галлоны в куб. метры (обратно при directly = false)
+	static double barrelToCubicMetre(double input, bool directly); //баррели в куб. метры (обратно при directly = false)
 };
 
