@@ -289,3 +289,63 @@ double ConvertAmericanToRussian::mileToLadon(double input, bool directly) //ми
 		return ConvertAmericanToSi::mileToMetre(ConvertRussianToSi::ladonToMetre(input, true), false);
 	}
 }
+
+double ConvertAmericanToRussian::acreToDesyatina(double input, bool directly) //акры в десятины (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::desyatinaToSquareMetre(ConvertAmericanToSi::acreToSquareMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::acreToSquareMetre(ConvertRussianToSi::desyatinaToSquareMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::poundUsaToFuntRus(double input, bool directly) //фунты (США) в фунты (русские) (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::funtToKg(ConvertAmericanToSi::poundToKg(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::poundToKg(ConvertRussianToSi::funtToKg(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::poundUsaToPoodRus(double input, bool directly) //фунты (США) в пуды (русские) (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::poodToKg(ConvertAmericanToSi::poundToKg(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::poundToKg(ConvertRussianToSi::poodToKg(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::hundredweightToFuntRus(double input, bool directly) //центнеры в фунты (русские) (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::funtToKg(ConvertAmericanToSi::hundredweightToKg(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::hundredweightToKg(ConvertRussianToSi::funtToKg(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::hundredweightToPoodRus(double input, bool directly) //центнеры в пуды (русские) (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::poodToKg(ConvertAmericanToSi::hundredweightToKg(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::hundredweightToKg(ConvertRussianToSi::poodToKg(input, true), false);
+	}
+}
