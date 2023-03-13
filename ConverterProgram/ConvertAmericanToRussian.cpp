@@ -146,3 +146,75 @@ double ConvertAmericanToRussian::footToLadon(double input, bool directly) //фу
 	}
 }
 
+double ConvertAmericanToRussian::yardToArshin(double input, bool directly) //ярды в аршины (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::arshinToMetre(ConvertAmericanToSi::yardToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::yardToMetre(ConvertRussianToSi::arshinToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::yardToLokot(double input, bool directly) //ярды в локти (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::lokotToMetre(ConvertAmericanToSi::yardToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::yardToMetre(ConvertRussianToSi::lokotToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::yardToSazhen(double input, bool directly) //ярды в сажени (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::sazhenToMetre(ConvertAmericanToSi::yardToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::yardToMetre(ConvertRussianToSi::sazhenToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::yardToVersta(double input, bool directly) //ярды в вёрсты (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::verstaToMetre(ConvertAmericanToSi::yardToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::yardToMetre(ConvertRussianToSi::verstaToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::yardToPyad(double input, bool directly) //ярды в пяди (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::pyadToMetre(ConvertAmericanToSi::yardToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::yardToMetre(ConvertRussianToSi::pyadToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::yardToLadon(double input, bool directly) //ярды в ладони (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::ladonToMetre(ConvertAmericanToSi::yardToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::yardToMetre(ConvertRussianToSi::ladonToMetre(input, true), false);
+	}
+}
+

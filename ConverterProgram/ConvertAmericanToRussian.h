@@ -14,6 +14,11 @@ public:
 	static double footToVersta(double input, bool directly); //футы (США) в вёрсты (обратно при directly = false)
 	static double footToPyad(double input, bool directly); //футы (США) в пяди (обратно при directly = false)
 	static double footToLadon(double input, bool directly); //футы (США) в ладони (обратно при directly = false)
-
+	static double yardToArshin(double input, bool directly); //ярды в аршины (обратно при directly = false)
+	static double yardToLokot(double input, bool directly); //ярды в локти (обратно при directly = false)
+	static double yardToSazhen(double input, bool directly); //ярды в сажени (обратно при directly = false)
+	static double yardToVersta(double input, bool directly); //ярды в вёрсты (обратно при directly = false)
+	static double yardToPyad(double input, bool directly); //ярды в пяди (обратно при directly = false)
+	static double yardToLadon(double input, bool directly); //ярды в ладони (обратно при directly = false)
 }; 
 
