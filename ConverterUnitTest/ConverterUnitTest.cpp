@@ -1346,6 +1346,101 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(resNormal, resBack);
 		}
+		TEST_METHOD(Gallon1ToBochkaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::gallonToBochka(1, true);
 
+			double resBack = ConvertAmericanToRussian::gallonToBochka(resNormal, false);
+			resBack = ConvertAmericanToRussian::gallonToBochka(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Bochka1ToGallonAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::gallonToBochka(1, false);
+
+			double resBack = ConvertAmericanToRussian::gallonToBochka(resNormal, true);
+			resBack = ConvertAmericanToRussian::gallonToBochka(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Gallon1ToCharkaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::gallonToCharka(1, true);
+
+			double resBack = ConvertAmericanToRussian::gallonToCharka(resNormal, false);
+			resBack = ConvertAmericanToRussian::gallonToCharka(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Charka1ToGallonAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::gallonToCharka(1, false);
+
+			double resBack = ConvertAmericanToRussian::gallonToCharka(resNormal, true);
+			resBack = ConvertAmericanToRussian::gallonToCharka(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Barrel1ToBochkaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::barrelToBochka(1, true);
+
+			double resBack = ConvertAmericanToRussian::barrelToBochka(resNormal, false);
+			resBack = ConvertAmericanToRussian::barrelToBochka(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Bochka1ToBarrelAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::barrelToBochka(1, false);
+
+			double resBack = ConvertAmericanToRussian::barrelToBochka(resNormal, true);
+			resBack = ConvertAmericanToRussian::barrelToBochka(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Barrel1ToCharkaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::barrelToCharka(1, true);
+
+			double resBack = ConvertAmericanToRussian::barrelToCharka(resNormal, false);
+			resBack = ConvertAmericanToRussian::barrelToCharka(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Charka1ToBarrelAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::barrelToCharka(1, false);
+
+			double resBack = ConvertAmericanToRussian::barrelToCharka(resNormal, true);
+			resBack = ConvertAmericanToRussian::barrelToCharka(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
 	};
 }
