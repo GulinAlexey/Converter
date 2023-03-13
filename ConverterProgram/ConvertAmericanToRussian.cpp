@@ -1,15 +1,15 @@
 ﻿#include "ConvertAmericanToRussian.h"
+#include "ConvertAmericanToSi.h"
+#include "ConvertRussianToSi.h"
 
 double ConvertAmericanToRussian::inchToArshin(double input, bool directly) //дюймы (США) в аршины (обратно при directly = false)
 {
 	if (directly)
 	{
-		//todo доработать вычисление inchToArshin
-		return 0.036;
+		return ConvertRussianToSi::arshinToMetre(ConvertAmericanToSi::inchToMetre(input, true), false);
 	}
 	else
 	{
-		//todo доработать вычисление inchToArshin
-		return 28;
+		return ConvertAmericanToSi::inchToMetre(ConvertRussianToSi::arshinToMetre(input, true), false);
 	}
 }
