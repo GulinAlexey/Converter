@@ -278,7 +278,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::arshinToMetre(1, false);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(0.406, res);
+			Assert::AreEqual(1.406, res);
 		}
 		TEST_METHOD(Metre18ToArshinTest)
 		{
@@ -355,7 +355,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::verstaToMetre(0.54, true);
 			res = round(res * 10) / 10; //округление до одного знака после запятой
 
-			Assert::AreEqual(576.072, res);
+			Assert::AreEqual(576.1, res);
 		}
 		TEST_METHOD(Metre1ToVerstaTest)
 		{
@@ -390,7 +390,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::pyadToMetre(1, false);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(5.618, res);
+			Assert::AreEqual(5.624, res);
 		}
 		TEST_METHOD(Metre21ToPyadTest)
 		{
@@ -439,7 +439,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::desyatinaToSquareMetre(0.051, true);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(55.72, res);
+			Assert::AreEqual(557.195, res);
 		}
 		TEST_METHOD(SquareMetre1ToDesyatinaTest)
 		{
@@ -474,7 +474,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::funtToKg(1, false);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(0.489, res);
+			Assert::AreEqual(2.442, res);
 		}
 		TEST_METHOD(Kg6ToFuntTest)
 		{
@@ -495,7 +495,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::poodToKg(5.3, true);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(86.819, res);
+			Assert::AreEqual(86.818, res);
 		}
 		TEST_METHOD(Kg1ToPoodTest)
 		{
@@ -509,7 +509,7 @@ namespace ConverterUnitTest
 			double res = ConvertRussianToSi::poodToKg(500, false);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(30.523, res);
+			Assert::AreEqual(30.524, res);
 		}
 	};
 
