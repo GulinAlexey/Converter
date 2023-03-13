@@ -1226,5 +1226,126 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(resNormal, resBack);
 		}
+		TEST_METHOD(Acre1ToDesyatinaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::acreToDesyatina(1, true);
+
+			double resBack = ConvertAmericanToRussian::acreToDesyatina(resNormal, false);
+			resBack = ConvertAmericanToRussian::acreToDesyatina(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Desyatina1ToAcreAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::acreToDesyatina(1, false);
+
+			double resBack = ConvertAmericanToRussian::acreToDesyatina(resNormal, true);
+			resBack = ConvertAmericanToRussian::acreToDesyatina(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(PoundUsa1ToFuntRusAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::poundUsaToFuntRus(1, true);
+
+			double resBack = ConvertAmericanToRussian::poundUsaToFuntRus(resNormal, false);
+			resBack = ConvertAmericanToRussian::poundUsaToFuntRus(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(FuntRus1ToPoundUsaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::poundUsaToFuntRus(1, false);
+
+			double resBack = ConvertAmericanToRussian::poundUsaToFuntRus(resNormal, true);
+			resBack = ConvertAmericanToRussian::poundUsaToFuntRus(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(PoundUsa1ToPoodRusAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::poundUsaToPoodRus(1, true);
+
+			double resBack = ConvertAmericanToRussian::poundUsaToPoodRus(resNormal, false);
+			resBack = ConvertAmericanToRussian::poundUsaToPoodRus(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(PoodRus1ToPoundUsaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::poundUsaToPoodRus(1, false);
+
+			double resBack = ConvertAmericanToRussian::poundUsaToPoodRus(resNormal, true);
+			resBack = ConvertAmericanToRussian::poundUsaToPoodRus(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Hundredweight1ToFuntRusAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::hundredweightToFuntRus(1, true);
+
+			double resBack = ConvertAmericanToRussian::hundredweightToFuntRus(resNormal, false);
+			resBack = ConvertAmericanToRussian::hundredweightToFuntRus(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(FuntRus1ToHundredweightAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::hundredweightToFuntRus(1, false);
+
+			double resBack = ConvertAmericanToRussian::hundredweightToFuntRus(resNormal, true);
+			resBack = ConvertAmericanToRussian::hundredweightToFuntRus(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Hundredweight1ToPoodRusAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::hundredweightToPoodRus(1, true);
+
+			double resBack = ConvertAmericanToRussian::hundredweightToPoodRus(resNormal, false);
+			resBack = ConvertAmericanToRussian::hundredweightToPoodRus(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(PoodRus1ToHundredweightAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::hundredweightToPoodRus(1, false);
+
+			double resBack = ConvertAmericanToRussian::hundredweightToPoodRus(resNormal, true);
+			resBack = ConvertAmericanToRussian::hundredweightToPoodRus(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+
 	};
 }
