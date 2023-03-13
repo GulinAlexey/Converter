@@ -637,14 +637,36 @@ namespace ConverterUnitTest
 		TEST_METHOD(Inch1ToArshinTest)
 		{
 			double res = ConvertAmericanToRussian::inchToArshin(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
 			Assert::AreEqual(0.036, res);
 		}
 		TEST_METHOD(Arshin1ToInchTest)
 		{
 			double res = ConvertAmericanToRussian::inchToArshin(1, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
 			Assert::AreEqual(28.0, res);
 		}
+
+		TEST_METHOD(Inch1ToArshinAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToArshin(1, true);
+
+			double resBack = ConvertAmericanToRussian::inchToArshin(resNormal, false);
+			resBack = ConvertAmericanToRussian::inchToArshin(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Arshin1ToInchAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToArshin(1, false);
+
+			double resBack = ConvertAmericanToRussian::inchToArshin(resNormal, true);
+			resBack = ConvertAmericanToRussian::inchToArshin(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+
 	};
 }

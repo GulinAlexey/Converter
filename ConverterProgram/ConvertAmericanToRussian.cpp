@@ -1,6 +1,6 @@
 ﻿#include "ConvertAmericanToRussian.h"
 
-double ConvertAmericanToRussian::inchToArshin(double input, bool directly) //дюймы в аршины
+double ConvertAmericanToRussian::inchToArshin(double input, bool directly) //дюймы (США) в аршины (обратно при directly = false)
 {
 	if (directly)
 	{
