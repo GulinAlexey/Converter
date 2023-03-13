@@ -667,6 +667,95 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(resNormal, resBack);
 		}
+		TEST_METHOD(Inch1ToLokotAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToLokot(1, true);
 
+			double resBack = ConvertAmericanToRussian::inchToLokot(resNormal, false);
+			resBack = ConvertAmericanToRussian::inchToLokot(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Lokot1ToInchAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToLokot(1, false);
+
+			double resBack = ConvertAmericanToRussian::inchToLokot(resNormal, true);
+			resBack = ConvertAmericanToRussian::inchToLokot(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Inch1ToSazhenAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToSazhen(1, true);
+
+			double resBack = ConvertAmericanToRussian::inchToSazhen(resNormal, false);
+			resBack = ConvertAmericanToRussian::inchToSazhen(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Sazhen1ToInchAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToSazhen(1, false);
+
+			double resBack = ConvertAmericanToRussian::inchToSazhen(resNormal, true);
+			resBack = ConvertAmericanToRussian::inchToSazhen(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Inch1ToVerstaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToVersta(1, true);
+
+			double resBack = ConvertAmericanToRussian::inchToVersta(resNormal, false);
+			resBack = ConvertAmericanToRussian::inchToVersta(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Versta1ToInchAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToVersta(1, false);
+
+			double resBack = ConvertAmericanToRussian::inchToVersta(resNormal, true);
+			resBack = ConvertAmericanToRussian::inchToVersta(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Inch1ToPyadAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToPyad(1, true);
+
+			double resBack = ConvertAmericanToRussian::inchToPyad(resNormal, false);
+			resBack = ConvertAmericanToRussian::inchToPyad(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Pyad1ToInchAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToPyad(1, false);
+
+			double resBack = ConvertAmericanToRussian::inchToPyad(resNormal, true);
+			resBack = ConvertAmericanToRussian::inchToPyad(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Inch1ToLadonAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToLadon(1, true);
+
+			double resBack = ConvertAmericanToRussian::inchToLadon(resNormal, false);
+			resBack = ConvertAmericanToRussian::inchToLadon(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Ladon1ToInchAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::inchToLadon(1, false);
+
+			double resBack = ConvertAmericanToRussian::inchToLadon(resNormal, true);
+			resBack = ConvertAmericanToRussian::inchToLadon(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
 	};
 }
