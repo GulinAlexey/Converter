@@ -48,6 +48,90 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(98.425, res);
 		}
+		TEST_METHOD(Foot1ToMetreTest)
+		{
+			double res = ConvertAmericanToSi::footToMetre(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(0.305, res);
+		}
+		TEST_METHOD(Foot3_6ToMetreTest)
+		{
+			double res = ConvertAmericanToSi::footToMetre(3.6, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(1.098, res);
+		}
+		TEST_METHOD(Metre1ToFootTest)
+		{
+			double res = ConvertAmericanToSi::footToMetre(1, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(3.281, res);
+		}
+		TEST_METHOD(Metre2_4ToFootTest)
+		{
+			double res = ConvertAmericanToSi::footToMetre(2.4, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(7.874, res);
+		}
+		TEST_METHOD(Yard1ToMetreTest)
+		{
+			double res = ConvertAmericanToSi::yardToMetre(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(0.914, res);
+		}
+		TEST_METHOD(Yard3_3ToMetreTest)
+		{
+			double res = ConvertAmericanToSi::yardToMetre(3.3, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(3.016, res);
+		}
+		TEST_METHOD(Metre1ToYardTest)
+		{
+			double res = ConvertAmericanToSi::yardToMetre(1, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(1.094, res);
+		}
+		TEST_METHOD(Metre1_9ToYardTest)
+		{
+			double res = ConvertAmericanToSi::yardToMetre(1.9, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(1.737, res);
+		}
+		TEST_METHOD(Mile1ToMetre)
+		{
+			double res = ConvertAmericanToSi::mileToMetre(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(1609.344, res);
+		}
+		TEST_METHOD(Mile0_005ToMetre)
+		{
+			double res = ConvertAmericanToSi::mileToMetre(0.005, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(8.047, res);
+		}
+		TEST_METHOD(Metre1ToMileTest)
+		{
+			double res = ConvertAmericanToSi::mileToMetre(1, false);
+			res = round(res * 100000) / 100000; //округление до пятого знака после запятой
+
+			Assert::AreEqual(0.00062, res);
+		}
+		TEST_METHOD(Metre209ToMileTest)
+		{
+			double res = ConvertAmericanToSi::mileToMetre(209, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(0.130, res);
+		}
 	};
 
 	TEST_CLASS(ConvertRussianToSiTest)
