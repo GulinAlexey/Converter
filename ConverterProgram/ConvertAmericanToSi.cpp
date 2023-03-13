@@ -1,6 +1,6 @@
 ﻿#include "ConvertAmericanToSi.h"
 
-double ConvertAmericanToSi::inchToMetre(double input, bool directly) //дюймы в метры
+double ConvertAmericanToSi::inchToMetre(double input, bool directly) //дюймы в метры (обратно при directly = false)
 {
 	double coeff = 0.0254;
 	if (directly)
@@ -13,7 +13,7 @@ double ConvertAmericanToSi::inchToMetre(double input, bool directly) //дюйм�
 	}
 }
 
-double ConvertAmericanToSi::footToMetre(double input, bool directly) //футы в метры
+double ConvertAmericanToSi::footToMetre(double input, bool directly) //футы в метры (обратно при directly = false)
 {
 	double coeff = 0.3048;
 	if (directly)
@@ -26,7 +26,7 @@ double ConvertAmericanToSi::footToMetre(double input, bool directly) //футы 
 	}
 }
 
-double ConvertAmericanToSi::yardToMetre(double input, bool directly) //ярды в метры
+double ConvertAmericanToSi::yardToMetre(double input, bool directly) //ярды в метры (обратно при directly = false)
 {
 	double coeff = 0.9144;
 	if (directly)
@@ -39,7 +39,7 @@ double ConvertAmericanToSi::yardToMetre(double input, bool directly) //ярды 
 	}
 }
 
-double ConvertAmericanToSi::mileToMetre(double input, bool directly) //мили в метры
+double ConvertAmericanToSi::mileToMetre(double input, bool directly) //мили в метры (обратно при directly = false)
 {
 	double coeff = 1609.344;
 	if (directly)
@@ -52,7 +52,7 @@ double ConvertAmericanToSi::mileToMetre(double input, bool directly) //мили 
 	}
 }
 
-double ConvertAmericanToSi::acreToSquareMetre(double input, bool directly) //акры в кв. метры
+double ConvertAmericanToSi::acreToSquareMetre(double input, bool directly) //акры в кв. метры (обратно при directly = false)
 {
 	double coeff = 4046.873;
 	if (directly)
@@ -65,7 +65,7 @@ double ConvertAmericanToSi::acreToSquareMetre(double input, bool directly) //а�
 	}
 }
 
-double ConvertAmericanToSi::poundToKg(double input, bool directly) //фунты в кг
+double ConvertAmericanToSi::poundToKg(double input, bool directly) //фунты в кг (обратно при directly = false)
 {
 	double coeff = 0.45359237;
 	if (directly)
@@ -78,7 +78,7 @@ double ConvertAmericanToSi::poundToKg(double input, bool directly) //фунты 
 	}
 }
 
-double ConvertAmericanToSi::hundredweightToKg(double input, bool directly) //центнеры США в кг
+double ConvertAmericanToSi::hundredweightToKg(double input, bool directly) //центнеры США в кг (обратно при directly = false)
 {
 	double coeff = 45.359237;
 	if (directly)
@@ -91,7 +91,7 @@ double ConvertAmericanToSi::hundredweightToKg(double input, bool directly) //ц�
 	}
 }
 
-double ConvertAmericanToSi::fahrenheitToKelvin(double input, bool directly) //фаренгейты в кельвины
+double ConvertAmericanToSi::fahrenheitToKelvin(double input, bool directly) //фаренгейты в кельвины (обратно при directly = false)
 {
 	double coeff = 45.359237;
 	if (directly)
