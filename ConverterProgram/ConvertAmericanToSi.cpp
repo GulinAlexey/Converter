@@ -51,3 +51,55 @@ double ConvertAmericanToSi::mileToMetre(double input, bool directly) //мили 
 		return input / coeff;
 	}
 }
+
+double ConvertAmericanToSi::acreToSquareMetre(double input, bool directly) //акры в кв. метры
+{
+	double coeff = 4046.873;
+	if (directly)
+	{
+		return input * coeff;
+	}
+	else
+	{
+		return input / coeff;
+	}
+}
+
+double ConvertAmericanToSi::poundToKg(double input, bool directly) //фунты в кг
+{
+	double coeff = 0.45359237;
+	if (directly)
+	{
+		return input * coeff;
+	}
+	else
+	{
+		return input / coeff;
+	}
+}
+
+double ConvertAmericanToSi::hundredweightToKg(double input, bool directly) //центнеры США в кг
+{
+	double coeff = 45.359237;
+	if (directly)
+	{
+		return input * coeff;
+	}
+	else
+	{
+		return input / coeff;
+	}
+}
+
+double ConvertAmericanToSi::fahrenheitToKelvin(double input, bool directly) //фаренгейты в кельвины
+{
+	double coeff = 45.359237;
+	if (directly)
+	{
+		return (input + 459.67) * 5 / 9;
+	}
+	else
+	{
+		return 1.8 * (input - 273) + 32;
+	}
+}

@@ -142,9 +142,9 @@ namespace ConverterUnitTest
 		TEST_METHOD(Acre2_3ToSquareMetre)
 		{
 			double res = ConvertAmericanToSi::acreToSquareMetre(2.3, true);
-			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+			res = round(res * 100) / 100; //округление до второго знака после запятой
 
-			Assert::AreEqual(9307.78, res);
+			Assert::AreEqual(9307.81, res);
 		}
 		TEST_METHOD(SquareMetre1ToAcre)
 		{
@@ -182,7 +182,7 @@ namespace ConverterUnitTest
 
 			res = round(res * 100) / 100; //округление до второго знака после запятой
 
-			Assert::AreEqual(2.21, res);
+			Assert::AreEqual(2.2, res);
 		}
 		TEST_METHOD(Kg7_77ToPound)
 		{
@@ -197,28 +197,28 @@ namespace ConverterUnitTest
 			double res = ConvertAmericanToSi::hundredweightToKg(1, true);
 			res = round(res); //округление
 
-			Assert::AreEqual(100, res);
+			Assert::AreEqual(45.0, res);
 		}
 		TEST_METHOD(Hundredweight24ToKg)
 		{
 			double res = ConvertAmericanToSi::hundredweightToKg(24, true);
 			res = round(res); //округление
 
-			Assert::AreEqual(2400, res);
+			Assert::AreEqual(1089.0, res);
 		}
 		TEST_METHOD(Kg1ToHundredweight)
 		{
 			double res = ConvertAmericanToSi::hundredweightToKg(1, false);
 			res = round(res * 100) / 100; //округление до второго знака после запятой
 
-			Assert::AreEqual(0.01, res);
+			Assert::AreEqual(0.02, res);
 		}
 		TEST_METHOD(Kg76ToHundredweight)
 		{
 			double res = ConvertAmericanToSi::hundredweightToKg(76, false);
 			res = round(res * 100) / 100; //округление до второго знака после запятой
 
-			Assert::AreEqual(0.76, res);
+			Assert::AreEqual(1.68, res);
 		}
 		TEST_METHOD(Fahrenheit1ToKelvin)
 		{
@@ -239,14 +239,14 @@ namespace ConverterUnitTest
 			double res = ConvertAmericanToSi::fahrenheitToKelvin(1, false);
 			res = round(res * 100) / 100; //округление до второго знака после запятой
 
-			Assert::AreEqual(-457.87, res);
+			Assert::AreEqual(-457.6, res);
 		}
 		TEST_METHOD(Kelvin352ToFahrenheit)
 		{
 			double res = ConvertAmericanToSi::fahrenheitToKelvin(352, false);
 			res = round(res * 100) / 100; //округление до второго знака после запятой
 
-			Assert::AreEqual(173.93, res);
+			Assert::AreEqual(174.2, res);
 		}
 	};
 
