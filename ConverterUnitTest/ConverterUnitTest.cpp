@@ -1081,5 +1081,150 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(resNormal, resBack);
 		}
+
+		TEST_METHOD(Mile1ToArshinAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToArshin(1, true);
+
+			double resBack = ConvertAmericanToRussian::mileToArshin(resNormal, false);
+			resBack = ConvertAmericanToRussian::mileToArshin(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Arshin1ToMileAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToArshin(1, false);
+
+			double resBack = ConvertAmericanToRussian::mileToArshin(resNormal, true);
+			resBack = ConvertAmericanToRussian::mileToArshin(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Mile1ToLokotAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToLokot(1, true);
+
+			double resBack = ConvertAmericanToRussian::mileToLokot(resNormal, false);
+			resBack = ConvertAmericanToRussian::mileToLokot(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Lokot1ToMileAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToLokot(1, false);
+
+			double resBack = ConvertAmericanToRussian::mileToLokot(resNormal, true);
+			resBack = ConvertAmericanToRussian::mileToLokot(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Mile1ToSazhenAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToSazhen(1, true);
+
+			double resBack = ConvertAmericanToRussian::mileToSazhen(resNormal, false);
+			resBack = ConvertAmericanToRussian::mileToSazhen(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Sazhen1ToMileAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToSazhen(1, false);
+
+			double resBack = ConvertAmericanToRussian::mileToSazhen(resNormal, true);
+			resBack = ConvertAmericanToRussian::mileToSazhen(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Mile1ToVerstaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToVersta(1, true);
+
+			double resBack = ConvertAmericanToRussian::mileToVersta(resNormal, false);
+			resBack = ConvertAmericanToRussian::mileToVersta(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Versta1ToMileAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToVersta(1, false);
+
+			double resBack = ConvertAmericanToRussian::mileToVersta(resNormal, true);
+			resBack = ConvertAmericanToRussian::mileToVersta(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Mile1ToPyadAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToPyad(1, true);
+
+			double resBack = ConvertAmericanToRussian::mileToPyad(resNormal, false);
+			resBack = ConvertAmericanToRussian::mileToPyad(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Pyad1ToMileAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToPyad(1, false);
+
+			double resBack = ConvertAmericanToRussian::mileToPyad(resNormal, true);
+			resBack = ConvertAmericanToRussian::mileToPyad(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Mile1ToLadonAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToLadon(1, true);
+
+			double resBack = ConvertAmericanToRussian::mileToLadon(resNormal, false);
+			resBack = ConvertAmericanToRussian::mileToLadon(resBack, true);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Ladon1ToMileAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::mileToLadon(1, false);
+
+			double resBack = ConvertAmericanToRussian::mileToLadon(resNormal, true);
+			resBack = ConvertAmericanToRussian::mileToLadon(resBack, false);
+
+			resNormal = round(resNormal * 1000) / 1000; //округление до третьего знака после запятой
+			resBack = round(resBack * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(resNormal, resBack);
+		}
 	};
 }
