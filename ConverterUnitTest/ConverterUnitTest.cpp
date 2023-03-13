@@ -32,6 +32,18 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(39.37, res);
 		}
+		TEST_METHOD(Inch2_5ToMetreTest)
+		{
+			double res = ConvertAmericanToSi::inchToMetre(2.5, true);
+
+			Assert::AreEqual(0.064, res);
+		}
+		TEST_METHOD(Metre2_5ToInchTest)
+		{
+			double res = ConvertAmericanToSi::inchToMetre(2.5, false);
+
+			Assert::AreEqual(98.43, res);
+		}
 	};
 
 	TEST_CLASS(ConvertRussianToSiTest)
