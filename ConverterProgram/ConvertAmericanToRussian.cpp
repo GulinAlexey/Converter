@@ -349,3 +349,51 @@ double ConvertAmericanToRussian::hundredweightToPoodRus(double input, bool direc
 		return ConvertAmericanToSi::hundredweightToKg(ConvertRussianToSi::poodToKg(input, true), false);
 	}
 }
+
+double ConvertAmericanToRussian::gallonToBochka(double input, bool directly) //галлоны в бочки (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::bochkaToCubicMetre(ConvertAmericanToSi::gallonToCubicMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::gallonToCubicMetre(ConvertRussianToSi::bochkaToCubicMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::gallonToCharka(double input, bool directly) // галлоны в чарки (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::charkaToCubicMetre(ConvertAmericanToSi::gallonToCubicMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::gallonToCubicMetre(ConvertRussianToSi::charkaToCubicMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::barrelToBochka(double input, bool directly) // баррели в бочки (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::bochkaToCubicMetre(ConvertAmericanToSi::barrelToCubicMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::barrelToCubicMetre(ConvertRussianToSi::bochkaToCubicMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::barrelToCharka(double input, bool directly) // баррели в чарки (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::charkaToCubicMetre(ConvertAmericanToSi::barrelToCubicMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::barrelToCubicMetre(ConvertRussianToSi::charkaToCubicMetre(input, true), false);
+	}
+}

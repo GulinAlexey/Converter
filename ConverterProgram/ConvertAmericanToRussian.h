@@ -35,6 +35,9 @@ public:
 	static double poundUsaToPoodRus(double input, bool directly); //фунты (США) в пуды (русские) (обратно при directly = false)
 	static double hundredweightToFuntRus(double input, bool directly); //центнеры в фунты (русские) (обратно при directly = false)
 	static double hundredweightToPoodRus(double input, bool directly); //центнеры в пуды (русские) (обратно при directly = false)
-
+	static double gallonToBochka(double input, bool directly); //галлоны в бочки (обратно при directly = false)
+	static double gallonToCharka(double input, bool directly); // галлоны в чарки (обратно при directly = false)
+	static double barrelToBochka(double input, bool directly); // баррели в бочки (обратно при directly = false)
+	static double barrelToCharka(double input, bool directly); // баррели в чарки (обратно при directly = false)
 }; 
 
