@@ -23,26 +23,30 @@ namespace ConverterUnitTest
 		TEST_METHOD(Inch1ToMetreTest)
 		{
 			double res = ConvertAmericanToSi::inchToMetre(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
 			Assert::AreEqual(0.025, res);
 		}
 		TEST_METHOD(Metre1ToInchTest)
 		{
 			double res = ConvertAmericanToSi::inchToMetre(1, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
 			Assert::AreEqual(39.37, res);
 		}
 		TEST_METHOD(Inch2_5ToMetreTest)
 		{
 			double res = ConvertAmericanToSi::inchToMetre(2.5, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
 			Assert::AreEqual(0.064, res);
 		}
 		TEST_METHOD(Metre2_5ToInchTest)
 		{
 			double res = ConvertAmericanToSi::inchToMetre(2.5, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(98.43, res);
+			Assert::AreEqual(98.425, res);
 		}
 	};
 

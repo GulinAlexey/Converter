@@ -4,12 +4,10 @@ double ConvertAmericanToSi::inchToMetre(double input, bool directly) //дюйм�
 {
 	if (directly)
 	{
-		//todo доработать вычисление inchToMetre
-		return 0.025;
+		return input * 0.0254;
 	}
 	else
 	{
-		//todo доработать вычисление inchToMetre
-		return 39.37;
+		return input * 39.37008;
 	}
 }
