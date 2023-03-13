@@ -248,6 +248,62 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(174.2, res);
 		}
+		TEST_METHOD(Gallon1ToCubicMetreTest)
+		{
+			double res = ConvertAmericanToSi::gallonToCubicMetre(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(0.004, res);
+		}
+		TEST_METHOD(Gallon188ToCubicMetreTest)
+		{
+			double res = ConvertAmericanToSi::gallonToCubicMetre(188, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(0.712, res);
+		}
+		TEST_METHOD(CubicMetre1ToGallonTest)
+		{
+			double res = ConvertAmericanToSi::gallonToCubicMetre(1, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(264.172, res);
+		}
+		TEST_METHOD(CubicMetre0_17ToGallonTest)
+		{
+			double res = ConvertAmericanToSi::gallonToCubicMetre(0.17, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(44.909, res);
+		}
+		TEST_METHOD(Barrel1ToCubicMetreTest)
+		{
+			double res = ConvertAmericanToSi::barrelToCubicMetre(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(0.119, res);
+		}
+		TEST_METHOD(Barrel444ToCubicMetreTest)
+		{
+			double res = ConvertAmericanToSi::barrelToCubicMetre(444, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(52.943, res);
+		}
+		TEST_METHOD(CubicMetre1ToBarrelTest)
+		{
+			double res = ConvertAmericanToSi::barrelToCubicMetre(1, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(8.386, res);
+		}
+		TEST_METHOD(CubicMetre1_14ToBarrelTest)
+		{
+			double res = ConvertAmericanToSi::barrelToCubicMetre(1.14, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(9.561, res);
+		}
 	};
 
 	TEST_CLASS(ConvertRussianToSiTest)
@@ -510,6 +566,62 @@ namespace ConverterUnitTest
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
 			Assert::AreEqual(30.524, res);
+		}
+		TEST_METHOD(Bochka1ToCubicMetreTest)
+		{
+			double res = ConvertRussianToSi::bochkaToCubicMetre(1, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(0.492, res);
+		}
+		TEST_METHOD(Bochka5_78ToCubicMetreTest)
+		{
+			double res = ConvertRussianToSi::bochkaToCubicMetre(5.78, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(2.843, res);
+		}
+		TEST_METHOD(CubicMetre1ToBochkaTest)
+		{
+			double res = ConvertRussianToSi::bochkaToCubicMetre(1, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(2.033, res);
+		}
+		TEST_METHOD(CubicMetre3_66ToBochkaTest)
+		{
+			double res = ConvertRussianToSi::bochkaToCubicMetre(3.66, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(7.441, res);
+		}
+		TEST_METHOD(Charka1ToCubicMetreTest)
+		{
+			double res = ConvertRussianToSi::charkaToCubicMetre(1, true);
+			res = round(res * 100000) / 100000; //округление до пятого знака после запятой
+
+			Assert::AreEqual(0.00012, res);
+		}
+		TEST_METHOD(Charka238ToCubicMetreTest)
+		{
+			double res = ConvertRussianToSi::charkaToCubicMetre(238, true);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(0.029, res);
+		}
+		TEST_METHOD(CubicMetre1ToCharkaTest)
+		{
+			double res = ConvertRussianToSi::charkaToCubicMetre(1, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(8130.471, res);
+		}
+		TEST_METHOD(CubicMetre0_12ToCharkaTest)
+		{
+			double res = ConvertRussianToSi::charkaToCubicMetre(0.12, false);
+			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
+
+			Assert::AreEqual(975.657, res);
 		}
 	};
 
