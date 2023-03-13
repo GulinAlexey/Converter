@@ -60,7 +60,7 @@ namespace ConverterUnitTest
 			double res = ConvertAmericanToSi::footToMetre(3.6, true);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(1.098, res);
+			Assert::AreEqual(1.097, res);
 		}
 		TEST_METHOD(Metre1ToFootTest)
 		{
@@ -88,7 +88,7 @@ namespace ConverterUnitTest
 			double res = ConvertAmericanToSi::yardToMetre(3.3, true);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(3.016, res);
+			Assert::AreEqual(3.018, res);
 		}
 		TEST_METHOD(Metre1ToYardTest)
 		{
@@ -102,7 +102,7 @@ namespace ConverterUnitTest
 			double res = ConvertAmericanToSi::yardToMetre(1.9, false);
 			res = round(res * 1000) / 1000; //округление до третьего знака после запятой
 
-			Assert::AreEqual(1.737, res);
+			Assert::AreEqual(2.078, res);
 		}
 		TEST_METHOD(Mile1ToMetre)
 		{
