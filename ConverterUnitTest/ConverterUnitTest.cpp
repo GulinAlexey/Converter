@@ -757,5 +757,114 @@ namespace ConverterUnitTest
 
 			Assert::AreEqual(resNormal, resBack);
 		}
+		TEST_METHOD(Foot1ToArshinAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToArshin(1, true);
+
+			double resBack = ConvertAmericanToRussian::footToArshin(resNormal, false);
+			resBack = ConvertAmericanToRussian::footToArshin(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Arshin1ToFootAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToArshin(1, false);
+
+			double resBack = ConvertAmericanToRussian::footToArshin(resNormal, true);
+			resBack = ConvertAmericanToRussian::footToArshin(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Foot1ToLokotAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToLokot(1, true);
+
+			double resBack = ConvertAmericanToRussian::footToLokot(resNormal, false);
+			resBack = ConvertAmericanToRussian::footToLokot(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Lokot1ToFootAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToLokot(1, false);
+
+			double resBack = ConvertAmericanToRussian::footToLokot(resNormal, true);
+			resBack = ConvertAmericanToRussian::footToLokot(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Foot1ToSazhenAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToSazhen(1, true);
+
+			double resBack = ConvertAmericanToRussian::footToSazhen(resNormal, false);
+			resBack = ConvertAmericanToRussian::footToSazhen(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Sazhen1ToFootAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToSazhen(1, false);
+
+			double resBack = ConvertAmericanToRussian::footToSazhen(resNormal, true);
+			resBack = ConvertAmericanToRussian::footToSazhen(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Foot1ToVerstaAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToVersta(1, true);
+
+			double resBack = ConvertAmericanToRussian::footToVersta(resNormal, false);
+			resBack = ConvertAmericanToRussian::footToVersta(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Versta1ToFootAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToVersta(1, false);
+
+			double resBack = ConvertAmericanToRussian::footToVersta(resNormal, true);
+			resBack = ConvertAmericanToRussian::footToVersta(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Foot1ToPyadAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToPyad(1, true);
+
+			double resBack = ConvertAmericanToRussian::footToPyad(resNormal, false);
+			resBack = ConvertAmericanToRussian::footToPyad(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Pyad1ToFootAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToPyad(1, false);
+
+			double resBack = ConvertAmericanToRussian::footToPyad(resNormal, true);
+			resBack = ConvertAmericanToRussian::footToPyad(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Foot1ToLadonAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToLadon(1, true);
+
+			double resBack = ConvertAmericanToRussian::footToLadon(resNormal, false);
+			resBack = ConvertAmericanToRussian::footToLadon(resBack, true);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+		TEST_METHOD(Ladon1ToFootAndBackTest)
+		{
+			double resNormal = ConvertAmericanToRussian::footToLadon(1, false);
+
+			double resBack = ConvertAmericanToRussian::footToLadon(resNormal, true);
+			resBack = ConvertAmericanToRussian::footToLadon(resBack, false);
+
+			Assert::AreEqual(resNormal, resBack);
+		}
+
 	};
 }
