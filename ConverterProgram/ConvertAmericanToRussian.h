@@ -20,5 +20,11 @@ public:
 	static double yardToVersta(double input, bool directly); //ярды в вёрсты (обратно при directly = false)
 	static double yardToPyad(double input, bool directly); //ярды в пяди (обратно при directly = false)
 	static double yardToLadon(double input, bool directly); //ярды в ладони (обратно при directly = false)
+	static double mileToArshin(double input, bool directly); //мили (США) в аршины (обратно при directly = false)
+	static double mileToLokot(double input, bool directly); //мили (США) в локти (обратно при directly = false)
+	static double mileToSazhen(double input, bool directly); //мили (США) в сажени (обратно при directly = false)
+	static double mileToVersta(double input, bool directly); //мили (США) в вёрсты (обратно при directly = false)
+	static double mileToPyad(double input, bool directly); //мили (США) в пяди (обратно при directly = false)
+	static double mileToLadon(double input, bool directly); //мили (США) в ладони (обратно при directly = false)
 }; 
 

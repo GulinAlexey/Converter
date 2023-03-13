@@ -218,3 +218,74 @@ double ConvertAmericanToRussian::yardToLadon(double input, bool directly) //яр
 	}
 }
 
+double ConvertAmericanToRussian::mileToArshin(double input, bool directly) //мили в аршины (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::arshinToMetre(ConvertAmericanToSi::mileToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::mileToMetre(ConvertRussianToSi::arshinToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::mileToLokot(double input, bool directly) //мили в локти (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::lokotToMetre(ConvertAmericanToSi::mileToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::mileToMetre(ConvertRussianToSi::lokotToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::mileToSazhen(double input, bool directly) //мили в сажени (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::sazhenToMetre(ConvertAmericanToSi::mileToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::mileToMetre(ConvertRussianToSi::sazhenToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::mileToVersta(double input, bool directly) //мили в вёрсты (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::verstaToMetre(ConvertAmericanToSi::mileToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::mileToMetre(ConvertRussianToSi::verstaToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::mileToPyad(double input, bool directly) //мили в пяди (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::pyadToMetre(ConvertAmericanToSi::mileToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::mileToMetre(ConvertRussianToSi::pyadToMetre(input, true), false);
+	}
+}
+
+double ConvertAmericanToRussian::mileToLadon(double input, bool directly) //мили в ладони (обратно при directly = false)
+{
+	if (directly)
+	{
+		return ConvertRussianToSi::ladonToMetre(ConvertAmericanToSi::mileToMetre(input, true), false);
+	}
+	else
+	{
+		return ConvertAmericanToSi::mileToMetre(ConvertRussianToSi::ladonToMetre(input, true), false);
+	}
+}
