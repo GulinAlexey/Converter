@@ -41,5 +41,8 @@
     <ClInclude Include="ConvertAmericanToRussian.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="MeasureSystems.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
